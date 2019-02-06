@@ -15,8 +15,8 @@ html {
 nav {
   background-color: #ffffff;
   border-bottom: 1px solid #cccccc;
-  -webkit-box-shadow: 0px 2px 4px #cccccc;
-          box-shadow: 0px 2px 4px #cccccc;
+  -webkit-box-shadow: 0px 2px 6px #666;
+          box-shadow: 0px 2px 6px #666;
   overflow: hidden;
   padding: 10px 50px;
   position: fixed;
@@ -30,7 +30,7 @@ nav .logo {
 }
 
 nav .logo img {
-  width: 220px;
+  width: 150px;
 }
 
 nav .navbar-menu {
@@ -47,11 +47,11 @@ nav .navbar-menu ul li {
 }
 
 nav .navbar-menu ul .btn-flag {
-  width: 50px;
+  width: 30px;
 }
 
 .part-1 {
-  height: calc(100vh - 100px);
+  height: calc(100vh);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -62,10 +62,14 @@ nav .navbar-menu ul .btn-flag {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 15rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
 }
 
 .part-1 .wifi-cloud-frame {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -82,11 +86,15 @@ nav .navbar-menu ul .btn-flag {
   margin-bottom: 5rem;
 }
 
+.part-1 .wifi-cloud-frame img {
+  width: 200px;
+}
+
 .part-1 .wifi-cloud-frame h1 {
   margin: 10px 0;
   color: #888888;
   font-weight: 300;
-  font-size: 3rem;
+  font-size: 2.2rem;
 }
 
 .part-1 .connect {
@@ -127,7 +135,7 @@ nav .navbar-menu ul .btn-flag {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  max-width: 800px;
+  max-width: 600px;
 }
 
 .part-1 .connect .logos-container .connect-logos {
@@ -144,24 +152,24 @@ nav .navbar-menu ul .btn-flag {
 }
 
 .part-1 .connect .logos-container .connect-logos img {
-  width: 200px;
+  width: 150px;
 }
 
 .part-1 .connect .logos-container .connect-logos:nth-child(1) img {
-  width: 270px;
+  width: 200px;
 }
 
 .part-1 .connect .logos-container .connect-logos:nth-child(2) img {
-  width: 100px;
+  width: 80px;
 }
 
 .part-1 .connect .logos-container .connect-logos:nth-child(4) img {
-  width: 160px;
+  width: 120px;
 }
 
 .part-1 .btn-explore {
   position: absolute;
-  top: calc(100vh - 80px);
+  top: calc(100vh - 65px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -173,6 +181,7 @@ nav .navbar-menu ul .btn-flag {
 
 .part-1 .btn-explore p {
   color: #222;
+  padding: 10px;
 }
 
 .part-1 .btn-explore img {
@@ -186,24 +195,19 @@ nav .navbar-menu ul .btn-flag {
 }
 
 .part-2 {
-  height: calc(100vh - 80px);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#99accf), to(#dde8e1));
-  background-image: linear-gradient(#99accf, #dde8e1);
+  height: calc(100vh);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#8598bd), to(#dde8e1));
+  background-image: linear-gradient(#8598bd, #dde8e1);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0 40px;
-  color: #222;
+  padding: 0 20px 0 40px;
 }
 
 .part-2 .product {
@@ -216,17 +220,87 @@ nav .navbar-menu ul .btn-flag {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .part-2 .product .side-nav {
-  border: 1px solid #222;
+  margin-left: -2px;
+}
+
+.part-2 .product .side-nav ul {
+  list-style: none;
+  display: inline-block;
+}
+
+.part-2 .product .side-nav ul li {
+  padding: 5px 0px;
+}
+
+.part-2 .product .side-nav ul li a {
+  cursor: pointer;
+  padding: 5px 20px;
+  text-decoration: none;
+  color: #222;
+}
+
+.part-2 .product .side-nav ul li a:hover {
+  color: #000;
+}
+
+.part-2 .product .side-nav ul li .link-active {
+  border-left: 2px solid #fff;
+  padding-left: 18px;
+}
+
+.part-2 .product .dots-container {
+  width: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.part-2 .product .dots-container .dot-active {
+  border: 1px solid;
+}
+
+.part-2 .product .dots-container .dot-border {
+  margin: 8px 0;
+  margin-left: auto;
+  border-radius: 100%;
+  position: relative;
+  width: 22px;
+  height: 22px;
+}
+
+.part-2 .product .dots-container .dot-border .dot {
+  -webkit-transform: translate(14%, 14%);
+          transform: translate(14%, 14%);
+  border-radius: 100%;
+  width: 16px;
+  height: 16px;
+}
+
+.part-2 .product .dots-container .dot-border:nth-child(1) .dot {
+  background-color: #013385;
+}
+
+.part-2 .product .dots-container .dot-border:nth-child(2) .dot {
+  background-color: #000000;
+}
+
+.part-2 .product .dots-container .dot-border:nth-child(3) .dot {
+  background-color: #f88d00;
 }
 
 .part-2 .product .product-container {
-  border: 1px solid #222;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -238,40 +312,51 @@ nav .navbar-menu ul .btn-flag {
           justify-content: center;
 }
 
-.part-2 .product .product-image-container {
-  height: 300px;
-  padding: 40px 30px;
+.part-2 .product .product-container .product-roll {
+  -webkit-transition: -webkit-transform 500ms;
+  transition: -webkit-transform 500ms;
+  transition: transform 500ms;
+  transition: transform 500ms, -webkit-transform 500ms;
+}
+
+.part-2 .product .product-container .product-image-container {
+  height: 320px;
+  padding: 20px 30px;
+  display: block;
   overflow: hidden;
 }
 
-.part-2 .product .product-image-container .product-image {
+.part-2 .product .product-container .product-image-container .product-image {
   width: 360px;
   opacity: 0;
 }
 
-.part-2 .product .product-image-container .product-image img {
-  width: 100%;
-  height: 100%;
-}
-
-.part-2 .product .product-image-container .active-image {
+.part-2 .product .product-container .product-image-container .product-image:nth-child(1) {
   opacity: 1;
 }
 
-.part-2 .product .product-details {
+.part-2 .product .product-container .product-image-container .product-image img {
+  width: 90%;
+}
+
+.part-2 .product .product-container .product-image-container .product-image:nth-child(3) {
+  opacity: 1;
+}
+
+.part-2 .product .product-container .product-details {
   padding: 20px;
 }
 
-.part-2 .product .product-details h1 {
+.part-2 .product .product-container .product-details h1 {
   font-size: 2rem;
   text-transform: uppercase;
 }
 
-.part-2 .product .product-details p {
+.part-2 .product .product-container .product-details p {
   font-size: 0.83rem;
 }
 
-.part-2 .product .product-details .btn-learn-more {
+.part-2 .product .product-container .product-details .btn-learn-more {
   text-transform: uppercase;
   padding: 5px 12px;
   border: 2px solid #fff;
@@ -282,28 +367,28 @@ nav .navbar-menu ul .btn-flag {
   font-size: 10px;
 }
 
-.part-2 .product .product-details .product-sizes {
+.part-2 .product .product-container .product-details .product-sizes {
   font-style: italic;
   font-size: 14px;
   font-weight: 600;
 }
 
-.part-2 .product .product-details .product-sizes span {
+.part-2 .product .product-container .product-details .product-sizes span {
   border: 2px solid #000;
   padding: 7px 3px;
   border-radius: 50%;
 }
 
-.part-2 .product .product-details .product-sizes span:nth-child(1) {
+.part-2 .product .product-container .product-details .product-sizes span:nth-child(1) {
   padding: 7px;
 }
 
-.part-2 .product .product-details .product-sizes .active-size {
+.part-2 .product .product-container .product-details .product-sizes .active-size {
   background-color: #000;
   color: #fff;
 }
 
-.part-2 .product .product-details .wifi-image {
+.part-2 .product .product-container .product-details .wifi-image {
   width: 30px;
   text-align: center;
   font-size: 10px;
@@ -311,11 +396,11 @@ nav .navbar-menu ul .btn-flag {
   margin: 20px 0;
 }
 
-.part-2 .product .product-details .wifi-image img {
+.part-2 .product .product-container .product-details .wifi-image img {
   width: 25px;
 }
 
-.part-2 .product .product-details .btn-buy-now {
+.part-2 .product .product-container .product-details .btn-buy-now {
   text-transform: uppercase;
   background-color: #eb8b00;
   color: #fff;

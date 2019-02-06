@@ -80,29 +80,37 @@
         <div class="product">
           <div class="side-nav">
             <ul>
-              <li><a href="iris">Nixplay IRIS</a></li>
-              <li><a href="seed">Nixplay Seed</a></li>
-              <li><a href="edge">Nixplay EDGE</a></li>
-              <li><a href="original">Nixplay Original</a></li>
+              <li>
+                <a id="iris" class="link-active">Nixplay IRIS</a>
+              </li>
+              <li><a id="seed">Nixplay Seed</a></li>
+              <li><a id="edge">Nixplay EDGE</a></li>
+              <li><a id="original">Nixplay Original</a></li>
             </ul>
           </div>
           <div class="product-container">
             <div class="product-image-container">
-              <div class="product-image"></div>
-              <div class="product-image  active-image">
-                <img src="assets/PRODUCTPAGE2_nixplay_seed10.png" alt="" />
-              </div>
-              <div class="product-image">
-                <img src="assets/03-edge.png" alt="" />
-              </div>
-              <div class="product-image">
-                <img src="assets/04-original.png" alt="" />
+              <div class="product-roll">
+                <div class="product-image">
+                  <img src="assets/01-iris.png" alt="" />
+                </div>
+                <div class="product-image">
+                  <img src="assets/PRODUCTPAGE2_nixplay_seed10.png" alt="" />
+                </div>
+                <div class="product-image">
+                  <img src="assets/03-edge.png" alt="" />
+                </div>
+                <div class="product-image">
+                  <img src="assets/04-original.png" alt="" />
+                </div>
               </div>
             </div>
             <div class="product-details">
-              <h1>NIXPLAY SEED</h1>
-              <p>Bright colour fun with adjustable angle.</p>
-              <button class="btn-learn-more">LEARN MORE</button>
+              <div class="product-head-details">
+                <h1>NIXPLAY SEED</h1>
+                <p>Bright colour fun with adjustable angle.</p>
+                <button class="btn-learn-more">LEARN MORE</button>
+              </div>
               <div class="product-sizes">
                 <span class="active-size">8"</span>
                 <span>10"</span>
@@ -115,13 +123,26 @@
               <button class="btn-buy-now">BUY NOW</button>
             </div>
           </div>
-          <div class="dots">
-            <span></span>
-            <span></span>
-            <span></span>
+          <div class="dots-container">
+            <div class="dot-border">
+              <div class="dot"></div>
+            </div>
+            <div class="dot-border dot-active">
+              <div class="dot"></div>
+            </div>
+            <div class="dot-border">
+              <div class="dot"></div>
+            </div>
           </div>
         </div>
       </section>
     </main>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
