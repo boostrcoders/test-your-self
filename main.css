@@ -217,6 +217,8 @@ nav .navbar-menu ul .btn-flag {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -225,10 +227,17 @@ nav .navbar-menu ul .btn-flag {
 }
 
 .part-2 .product .side-nav {
+  width: 30%;
+  height: 100%;
+  border: 1px solid #333;
   margin-left: -2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .part-2 .product .side-nav ul {
+  width: 100%;
   list-style: none;
   display: inline-block;
 }
@@ -251,6 +260,28 @@ nav .navbar-menu ul .btn-flag {
 .part-2 .product .side-nav ul li .link-active {
   border-left: 2px solid #fff;
   padding-left: 18px;
+}
+
+.part-2 .product .side-nav .product-arrow-nav {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding: 0 50px;
+}
+
+.part-2 .product .side-nav .product-arrow-nav .arrow-container a {
+  cursor: pointer;
+}
+
+.part-2 .product .side-nav .product-arrow-nav .arrow-container .arrow-up img {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  width: 30px;
+}
+
+.part-2 .product .side-nav .product-arrow-nav .arrow-container .arrow-down img {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  width: 30px;
 }
 
 .part-2 .product .dots-container {
@@ -298,9 +329,7 @@ nav .navbar-menu ul .btn-flag {
 }
 
 .part-2 .product .product-container {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

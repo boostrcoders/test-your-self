@@ -26,6 +26,7 @@
 // }
 let slides = $(".product-roll").prop("style");
 let slideImage = $(".product-image");
+let sideNav = $(".side-nav ul li a");
 
 function rollImage(i) {
   imageShow();
@@ -45,17 +46,17 @@ function rollImage(i) {
 }
 
 function imageHide(activeImage) {
-  console.log(activeImage);
-
   for (i = 0; i < slideImage.length; i++) {
-    slideImage[i].style.opacity = 0;
-    slideImage[i].style.transition = "opacity 1s";
     if (i === activeImage) {
       slideImage[i].style.opacity = 1;
       slideImage[i].style.transition = "opacity 0s";
+    } else {
+      slideImage[i].style.opacity = 0;
+      slideImage[i].style.transition = "opacity 1s";
     }
   }
 }
+
 function imageShow() {
   for (i = 0; i < slideImage.length; i++) {
     slideImage[i].style.opacity = 1;
@@ -63,15 +64,28 @@ function imageShow() {
   }
 }
 
+function linkActive(num, id) {
+  for (i = 0; i < sideNav.length; i++) {
+    if (i === num) {
+      sideNav.removeClass("link-active");
+    }
+  }
+  $(id).addClass("link-active");
+}
+
 $("#iris").on("click", function() {
   rollImage(0);
+  linkActive(0, "#iris");
 });
 $("#seed").on("click", function() {
   rollImage(1);
+  linkActive(1, "#seed");
 });
 $("#edge").on("click", function() {
   rollImage(2);
+  linkActive(2, "#edge");
 });
 $("#original").on("click", function() {
   rollImage(3);
+  linkActive(3, "#original");
 });
