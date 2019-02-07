@@ -84,7 +84,7 @@ $(window).on("load", function() {
       //ORIGINAL
     } else if (i === 3) {
       slides.transform = "translateY(-800px)";
-      details.transform = "translateY(-170px)";
+      details.transform = "translateY(-160px)";
       features[0].style.opacity = 1;
       features[1].style.opacity = 1;
       features[2].style.opacity = 1;
