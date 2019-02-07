@@ -75,7 +75,7 @@ const newCart = () => {
 //Getting the Total price, Discount, Total Price DISCOUNTED
 const checkOut = () => {
   return newCart().reduce(
-    (total, product) => total + parseFloat(product.discounted_price),
+    (total, product) => total + parseFloat(product.discounted_price), //ParseFloat to maintaine decimal
     0
   );
 };
