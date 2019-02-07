@@ -169,7 +169,7 @@ nav .navbar-menu ul .btn-flag {
 
 .part-1 .btn-explore {
   position: absolute;
-  top: calc(100vh - 65px);
+  top: calc(100vh - 75px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -217,8 +217,6 @@ nav .navbar-menu ul .btn-flag {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -380,7 +378,8 @@ nav .navbar-menu ul .btn-flag {
 }
 
 .part-2 .product .product-container .product-details .product-head-details {
-  height: 50px;
+  height: 60px;
+  padding: 5px 0px;
   overflow: hidden;
 }
 
@@ -389,12 +388,15 @@ nav .navbar-menu ul .btn-flag {
   transition: -webkit-transform 500ms;
   transition: transform 500ms;
   transition: transform 500ms, -webkit-transform 500ms;
-  -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  width: 100%;
 }
 
 .part-2 .product .product-container .product-details .product-head-details .details-item-container .details-item {
-  padding: 0 10px;
+  position: relative;
+  width: 100%;
+  padding: 10 0px;
 }
 
 .part-2 .product .product-container .product-details .product-head-details .details-item-container .details-item h1 {
