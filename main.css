@@ -489,9 +489,10 @@ nav .navbar-menu ul .btn-flag {
 .part-2 .product-arrow-nav .arrow-container .arrow-up {
   background-color: #222;
   border-radius: 100%;
-  padding: 7px 10px;
+  padding: 6px 10px;
   color: #fff;
   font-size: 20px;
+  font-weight: 300;
 }
 
 .part-2 .product-arrow-nav .arrow-container .arrow-down {
@@ -500,5 +501,6 @@ nav .navbar-menu ul .btn-flag {
   padding: 6px 12px;
   color: #fff;
   font-size: 20px;
+  font-weight: 300;
 }
 /*# sourceMappingURL=main.css.map */
